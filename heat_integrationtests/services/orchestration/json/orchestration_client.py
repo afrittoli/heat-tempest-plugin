@@ -21,7 +21,7 @@ from six.moves.urllib import parse as urllib
 from tempest.lib.common import rest_client
 from tempest.lib import exceptions as lib_exc
 
-from heat_integration_tests.common import exceptions
+from heat_integrationtests.common import exceptions
 
 
 class OrchestrationClient(rest_client.RestClient):
