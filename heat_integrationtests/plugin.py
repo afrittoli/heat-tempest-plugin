@@ -39,7 +39,6 @@ class HeatTempestPlugin(plugins.TempestPlugin):
         return [(heat_config.heat_group.name,
                  heat_config.HeatGroup)]
 
-
     def get_service_clients(self):
         orchestration_config = config.service_client_config('heat_plugin')
         params = {
