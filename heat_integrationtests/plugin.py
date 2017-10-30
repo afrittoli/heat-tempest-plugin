@@ -17,7 +17,7 @@ import os
 from tempest import config
 from tempest.test_discover import plugins
 
-from heat_tempest_plugin.common import config as heat_config
+from heat_integrationtests.common import config as heat_config
 
 
 class HeatTempestPlugin(plugins.TempestPlugin):
