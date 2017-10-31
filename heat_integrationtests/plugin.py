@@ -44,7 +44,7 @@ class HeatTempestPlugin(plugins.TempestPlugin):
         params = {
             'name': 'orchestration',
             'service_version': 'orchestration',
-            'module_path': 'heat_integrationtests.services.orchestration.v1',
+            'module_path': 'heat_integrationtests.services.orchestration',
             'client_names': ['OrchestrationClient']
         }
         params.update(orchestration_config)
