@@ -411,3 +411,11 @@ class OrchestrationClient(rest_client.RestClient):
 
         headers = self.get_headers()
         return headers, body
+
+    def show_output(self, stack_identifier, output_key):
+        """Returns a specific output of a single stack."""
+        url = "stacks/%s/outputs/%s" % (stack_identifier, output_key)
+        resp, body = self.get(url)
+        self.expected_success(200, resp.status)
+        body = json.loads(body)
+        return rest_client.ResponseBody(resp, body)
